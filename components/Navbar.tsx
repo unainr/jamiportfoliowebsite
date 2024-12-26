@@ -9,7 +9,7 @@ const Navbar = () => {
 
 	// Smooth Scroll Handler
 	const handleScroll = (e: React.MouseEvent<HTMLAnchorElement>,targetId: string) => {
-		e.preventDefault(); // Prevent default anchor behavior
+		e.preventDefault(); // Prevuent default anchor behavior
 		const targetElement = document.getElementById(targetId); 
 		if (targetElement) {
 			targetElement.scrollIntoView({ behavior: "smooth" }); 

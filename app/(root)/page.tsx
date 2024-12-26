@@ -1,6 +1,5 @@
 import { About } from "@/components/AboutComponents";
 import { TextGenerateEffectDemo } from "@/components/GenerativeText";
-import Project from "./project/page";
 import { Projects } from "@/components/Projects";
 import { client } from "@/sanity/lib/client";
 import { PROJECT_FETCH_QUERY } from "@/sanity/lib/queries";
