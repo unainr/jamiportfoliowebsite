@@ -16,7 +16,7 @@ const nextConfig: NextConfig = {
   async headers() {
     return [
       {
-        source: "/studio/:path*", // Match the Sanity Studio route
+        source: "/app/studio/:path*", // Match the Sanity Studio route
         headers: [
           {
             key: "Cache-Control",
