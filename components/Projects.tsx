@@ -1,5 +1,12 @@
 import React from "react";
-export function Projects({ project }: { project: any }) {
+
+interface Project {
+	name: string;
+	description: string;
+	images: string[];
+	projecttLink: string;
+}
+export function Projects({ project }: { project: Project }) {
 	const { name, description, images, projecttLink } = project;
 
 	return (
