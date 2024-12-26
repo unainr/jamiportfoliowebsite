@@ -8,4 +8,6 @@ export const PROJECT_FETCH_QUERY =
   projecttLink,
   "images": images[].asset->url, 
 }
+
 `);
+
