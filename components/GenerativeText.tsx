@@ -2,6 +2,7 @@
 import Link from "next/link";
 import { TextGenerateEffect } from "./ui/text-generate-effect";
 import Image from "next/image";
+import { Button } from "./ui/button";
 
 const words = `Hi, I’m Jami Raza
 A passionate Full Stack Developer crafting seamless digital experiences with modern technologies.
@@ -41,9 +42,9 @@ export function TextGenerateEffectDemo() {
   Download CV
 </Link>
     
-      <Link href={"/project"} className="border-2 border-purple-600  hover:bg-purple-600 hover:text-white px-6 py-2 rounded-full transition-all shadow-md">
+      <Button  className="border-2 border-purple-600  hover:bg-purple-600 hover:text-white px-6 py-2 rounded-full transition-all shadow-md">
         All Projects
-      </Link>
+      </Button>
     </div>
 
     {/* Social Media Links */}
