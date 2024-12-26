@@ -1,13 +1,24 @@
 import { About } from "@/components/AboutComponents";
 import { TextGenerateEffectDemo } from "@/components/GenerativeText";
 import { Projects } from "@/components/Projects";
-import { client } from "@/sanity/lib/client";
 import { PROJECT_FETCH_QUERY } from "@/sanity/lib/queries";
 import { TimelineDemo } from "@/components/TimeLine";
 import { ContactForm } from "@/components/ContactForm";
+import { createClient } from "next-sanity";
+
+
+const sanityClient = createClient({
+	projectId: process.env.NEXT_PUBLIC_SANITY_PROJECT_ID!,
+	dataset: process.env.NEXT_PUBLIC_SANITY_DATASET!,
+	apiVersion: '2023-01-01',
+	useCdn: true,
+  });
+  
+  export const revalidate = 10; // Revalidate every 10 seconds
+  
 
 export default async function Home() {
-	const projects = await client.fetch(PROJECT_FETCH_QUERY);
+	const projects = await sanityClient.fetch(PROJECT_FETCH_QUERY);
 	return (
 		<>
 			<div className="absolute inset-0 dark:bg-black bg-white dark:bg-grid-white/[0.1] bg-grid-black/[0.1]">
