@@ -12,14 +12,10 @@ import {
 import { SiMongodb, SiFlutter, SiDart, SiSharp, SiDotnet, SiTypescript, SiMysql } from "react-icons/si";
 
 const icons = [
-  { Icon: FaReact, label: "React", color: "#61DAFB" },
   { Icon: FaHtml5, label: "HTML5", color: "#E34F26" },
   { Icon: FaCss3Alt, label: "CSS3", color: "#1572B6" },
   { Icon: FaJsSquare, label: "JavaScript", color: "#F7DF1E" },
-  { Icon: SiTypescript, label: "TypeScript", color: "#3178C6" },
-  { Icon: FaNodeJs, label: "Node.js", color: "#339933" },
   { Icon: SiMysql, label: "MySQL", color: "#4479A1" },
-  { Icon: SiMongodb, label: "MongoDB", color: "#47A248" },
   { Icon: SiFlutter, label: "Flutter", color: "#02569B" },
   { Icon: SiDart, label: "Dart", color: "#0175C2" },
   { Icon: SiSharp, label: "C#", color: "#239120" },
