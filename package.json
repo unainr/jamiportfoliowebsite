@@ -4,7 +4,7 @@
 	"private": true,
 	"scripts": {
 		"dev": "next dev --turbopack ",
-	    "build": "prisma generate && next build",
+		"build": "prisma generate && next build",
 		"start": "next start",
 		"lint": "next lint",
 		"postinstall": "prisma generate"
@@ -17,6 +17,7 @@
 		"@radix-ui/react-toast": "^1.2.4",
 		"@sanity/image-url": "^1.1.0",
 		"@sanity/vision": "^3.68.3",
+		"@splinetool/react-spline": "^4.1.0",
 		"class-variance-authority": "^0.7.1",
 		"clsx": "^2.1.1",
 		"framer-motion": "^11.15.0",

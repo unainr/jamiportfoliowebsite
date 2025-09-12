@@ -104,7 +104,7 @@ const Navbar = () => {
 						</a>
 					</div>
 					<div className="flex justify-center md:block">
-						<ModeToggle />
+						{/* <ModeToggle /> */}
 					</div>
 				</div>
 			</div>
