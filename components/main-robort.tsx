@@ -43,7 +43,7 @@ export function MainRobort() {
 
           {/* Download Resume Button */}
           <a
-            href="resume.pdf" // <- place your resume file in /public folder
+            href="Resume.pdf" // <- place your resume file in /public folder
             download
             className="
               inline-block mt-8 px-6 py-3
